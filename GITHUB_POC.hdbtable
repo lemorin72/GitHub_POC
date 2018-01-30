@@ -1,0 +1,10 @@
+table.schemaName = "LEOSYSTEM"; 
+table.tableType = COLUMNSTORE; // ROWSTORE is an alternative value
+
+table.columns =
+ [
+    {name = "PKEY";  sqlType = VARCHAR;  length = 100; },
+    {name = "DATA1";  sqlType = VARCHAR;  length = 100; }
+];	
+
+table.primaryKey.pkcolumns = ["PKEY"];
