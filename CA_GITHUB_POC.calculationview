@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" schemaVersion="2.3" id="CA_GITHUB_POC" applyPrivilegeType="ANALYTIC_PRIVILEGE" defaultClient="$$client$$" visibility="internal" calculationScenarioType="TREE_BASED" dataCategory="DIMENSION" enforceSqlExecution="false" outputViewType="Aggregation">
+<descriptions defaultDescription="CA_GITHUB_POC"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="GitHub_POC::GITHUB_POC" type="DATA_BASE_TABLE">
+    <viewAttributes allViewAttributes="true"/>
+    <columnObject schemaName="LEOSYSTEM" columnObjectName="GitHub_POC::GITHUB_POC"/>
+  </DataSource>
+</dataSources>
+<calculationViews/>
+<logicalModel id="GitHub_POC::GITHUB_POC">
+  <attributes>
+    <attribute id="DATA1" order="1" attributeHierarchyActive="false" displayAttribute="false">
+      <descriptions defaultDescription="DATA1">
+        <comment text=""/>
+      </descriptions>
+      <keyMapping schemaName="LEOSYSTEM" columnObjectName="GitHub_POC::GITHUB_POC" columnName="DATA1"/>
+    </attribute>
+    <attribute id="PKEY" key="true" order="2" attributeHierarchyActive="false" semanticType="empty" displayAttribute="false">
+      <descriptions defaultDescription="PKEY"/>
+      <keyMapping schemaName="LEOSYSTEM" columnObjectName="GitHub_POC::GITHUB_POC" columnName="PKEY"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/></logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>
